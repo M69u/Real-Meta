@@ -1,0 +1,56 @@
+# -----------------------------
+# Python / FastAPI Backend
+# -----------------------------
+
+# Byte-compiled / cache files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+venv/
+.venv/
+env/
+ENV/
+*.env
+
+# Environment variables
+.env
+.env.*
+
+# Pytest / Coverage / Build
+.pytest_cache/
+coverage/
+htmlcov/
+build/
+dist/
+*.egg-info/
+
+# Logs
+*.log
+
+# IDE & Editor
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# OS-specific
+.DS_Store
+Thumbs.db
+
+# Model / data files
+*.h5
+*.pt
+*.weights
+*.pkl
+*.npy
+
+# Jupyter Notebooks checkpoints
+.ipynb_checkpoints/
+
+# -----------------------------
+# PostgreSQL / Docker
+# -----------------------------
+pgdata/
+docker-compose.override.yml
