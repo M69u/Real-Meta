@@ -2,6 +2,7 @@
 
 import { useEffect, useRef } from "react"
 import { Camera, ArrowRight } from "lucide-react"
+import Link from "next/link"
 
 export default function Home() {
   const backgroundRef = useRef<HTMLDivElement>(null)
@@ -66,18 +67,20 @@ export default function Home() {
 
           {/* Card Content */}
           <h2 className="text-xl font-bold text-center mb-2 text-white" style={{ fontFamily: "var(--font-playfair)" }}>
-            Discover Stories Beyond the Frame
+            Discover Stories Behind Every Monument
           </h2>
 
           <p className="text-center text-gray-300 mb-6 text-xs leading-relaxed">
-            Point your camera at any artwork to uncover its hidden history.
+            Point your camera at any monument to uncover its hidden history.
           </p>
 
           {/* CTA Button */}
-          <button className="w-full bg-gradient-to-r from-amber-400 to-amber-600 hover:from-amber-300 hover:to-amber-500 text-black font-semibold py-3 px-6 rounded-full flex items-center justify-center gap-2 transition-all duration-300 button-glow text-sm">
-            <span>Start Scanning</span>
-            <ArrowRight className="w-4 h-4" />
-          </button>
+          <Link href="/scan" className="block w-full">
+            <button className="w-full bg-gradient-to-r from-amber-400 to-amber-600 hover:from-amber-300 hover:to-amber-500 text-black font-semibold py-3 px-6 rounded-full flex items-center justify-center gap-2 transition-all duration-300 button-glow text-sm">
+              <span>Start Scanning</span>
+              <ArrowRight className="w-4 h-4" />
+            </button>
+          </Link>
         </div>
       </div>
     </main>

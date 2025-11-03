@@ -16,8 +16,8 @@ const poppins = Poppins({
 })
 
 export const metadata: Metadata = {
-  title: "RealScan - Museum AI Scanner",
-  description: "Point, scan, and uncover the hidden tales behind every artwork",
+  title: "ArtScope - Monument Scanner",
+  description: "Point, scan, and uncover the hidden tales behind every monument",
   generator: "v0.app",
 }
 
